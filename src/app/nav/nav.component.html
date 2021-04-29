@@ -1,0 +1,12 @@
+<div class="top">
+    <nav>
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/contact" routerLinkActive="active">Contact</a>
+        <a *ngIf="!token" routerLink="/login" routerLinkActive="active">Login</a>
+        <span *ngIf="token">
+          <a class="txt">Welcome! {{claims.name}}</a>
+          <a class="link" (click)="logout()" >Log out</a>
+        </span>
+    </nav>
+</div>
+<hr>

@@ -1,0 +1,48 @@
+body {
+    margin: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.top {
+    min-height: 35px;
+    background-color: #88cece;
+    display: flex;
+    padding: 1em;
+    font-size: 18px;
+    nav {
+        span {
+            display: flex;
+            .txt {
+                cursor: default;
+            }
+            .link {
+                cursor: pointer;
+            }
+        }
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        justify-content: left;
+        a {
+            text-decoration: none;
+            display: flex;
+            padding: 1em;
+            border-radius: 5px;
+            color: #3c3c3c;
+        }
+        a:hover {
+            color: #FFF !important;
+        }
+    }
+    .active {
+        background-color: #80e9e9f6;
+        color: #FFF;
+    }
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #80e8e8;
+    border: none;
+    border-radius: 5px;
+}
